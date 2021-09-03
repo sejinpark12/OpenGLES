@@ -3,7 +3,10 @@
 #
 
 cmake_minimum_required(VERSION 3.18)
-project(OpenGLES)
+project(OpenGLES LANGUAGES CXX)
 
 list(APPEND CMAKE_MODULE_PATH
-    "${CMAKE_SOURCE_DIR}/Modules")
+    ${CMAKE_SOURCE_DIR}/Modules)
+
+add_subdirectory(Base)
+add_subdirectory(Test)
