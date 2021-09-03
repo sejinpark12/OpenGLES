@@ -76,14 +76,18 @@ void Window::size(const glm::ivec2 &size) {
 
 void *Window::native() const {
     SDL_SysWMinfo sys_wm_info;
-    SDL_VERSION(&sys_wm_info.version);
 
+    SDL_VERSION(&sys_wm_info.version)
     if (!SDL_GetWindowWMInfo(window_, &sys_wm_info)) {
         return nullptr;
     }
 
 #if SDL_VIDEO_DRIVER_COCOA
-    return (__bridge void *)[sys_wm_info.info.cocoa.window contentView];
+    NSView* view = [sys_wm_info.info.cocoa.window contentView];
+    if (![view wantsLayer]) {
+        [view setWantsLayer:YES];
+    }
+    return (__bridge void *)[view layer];
 #else
     return nullptr;
 #endif
@@ -99,4 +103,4 @@ bool Window::process_event() const {
     }
 
     return true;
-};
+}
