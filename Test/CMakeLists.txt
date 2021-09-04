@@ -3,8 +3,7 @@
 #
 
 add_executable(Test
-    src/window_test.cpp
-    src/main.cpp)
+    src/window_test.cpp)
 
 target_include_directories(Test
     PRIVATE src)
@@ -13,5 +12,4 @@ find_package(Catch2 CONFIG REQUIRED)
 
 target_link_libraries(Test
     PRIVATE Base
-            Catch2::Catch2
             Catch2::Catch2WithMain)
