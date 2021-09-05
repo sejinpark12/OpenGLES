@@ -12,10 +12,6 @@ target_include_directories(Base
 target_compile_features(Base
     PUBLIC cxx_std_17)
 
-target_compile_options(Base
-    PUBLIC $<$<PLATFORM_ID:Darwin>:-x objective-c++>
-           $<$<PLATFORM_ID:Darwin>:-fobjc-arc>)
-
 find_package(glm CONFIG REQUIRED)
 find_package(SDL2 CONFIG REQUIRED)
 find_package(EGL REQUIRED)
@@ -26,3 +22,12 @@ target_link_libraries(Base
            SDL2::SDL2
            EGL
            GLESv3)
+
+if(${CMAKE_SYSTEM_NAME} MATCHES Darwin)
+    target_sources(Base
+        PRIVATE src/cocoa/Window.mm)
+
+    target_compile_options(Base
+        PRIVATE -fobjc-arc
+                -x objective-c++)
+endif()

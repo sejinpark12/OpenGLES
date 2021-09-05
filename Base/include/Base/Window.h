@@ -19,6 +19,17 @@ public:
     };
 
 public:
+    /// 네이티브 디스플레이를 반환합니다.
+    /// \param window 윈도우 객체입니다.
+    /// \return 네이티브 디스플레이입니다.
+    static int32_t native_display(const Window &window);
+
+    /// 네이티브 윈도우를 반환합니다.
+    /// \param window 윈도우 객체입니다.
+    /// \return 네이티브 윈도우입니다.
+    static void *native_window(const Window &window);
+
+public:
     /// 생성자.
     /// \param descriptor 생성할 윈도우를 서술한 객체입니다.
     explicit Window(const Descriptor &descriptor);
@@ -53,14 +64,15 @@ public:
     /// \param size 변경할 윈도우 크기입니다.
     void size(const glm::ivec2 &size);
 
-    /// 네이티브 윈도우를 반환합니다.
-    /// \return 네이티브 윈도우입니다.
-    [[nodiscard]] void *native() const;
-
 private:
     /// 이벤트를 처리합니다.
     /// \return 이벤트 루프를 유지하는 경우는 참, 종료하는 경우는 거짓을 반환합니다.
     [[nodiscard]] bool process_event() const;
+
+    /// 윈도우가 종료되어야 하는지 판단합니다.
+    /// \param event 이벤트 객체입니다.
+    /// \return 윈도우가 종료되는 경우는 참, 종료하지 않는 경우는 거짓을 반환합니다.
+    [[nodiscard]] bool should_close_window(const SDL_Event &event) const;
 
 private:
     SDL_Window *window_{nullptr};
