@@ -7,10 +7,6 @@
 #include <stdexcept>
 #include <SDL_syswm.h>
 
-#if SDL_VIDEO_DRIVER_COCOA
-#include <AppKit/AppKit.h>
-#endif
-
 Window::Window(const Descriptor &descriptor) {
     if (SDL_Init(SDL_INIT_VIDEO)) {
         throw std::runtime_error("Error: Fail to initialize SDL.");
