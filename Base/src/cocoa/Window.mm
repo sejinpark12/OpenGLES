@@ -4,6 +4,7 @@
 
 #include "Base/Window.h"
 
+#include <spdlog/spdlog.h>
 #include <SDL_syswm.h>
 #include <EGL/egl.h>
 #include <AppKit/AppKit.h>
@@ -17,14 +18,11 @@ void *Window::native_window(const Window &window) {
     SDL_VERSION(&sys_wm_info.version)
 
     if (!SDL_GetWindowWMInfo(window.window_, &sys_wm_info)) {
-        return nullptr;
+        spdlog::error("{}", SDL_GetError());
+        throw std::runtime_error("Fail to get a native window from Window.");
     }
 
     NSView* view = [sys_wm_info.info.cocoa.window contentView];
-    if (!view) {
-        return nullptr;
-    }
-
     if (![view wantsLayer]) {
         [view setWantsLayer:YES];
     }

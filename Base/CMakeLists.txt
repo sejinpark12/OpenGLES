@@ -12,13 +12,15 @@ target_include_directories(Base
 target_compile_features(Base
     PUBLIC cxx_std_17)
 
+find_package(spdlog CONFIG REQUIRED)
 find_package(glm CONFIG REQUIRED)
 find_package(SDL2 CONFIG REQUIRED)
 find_package(EGL REQUIRED)
 find_package(GLESv3 REQUIRED)
 
 target_link_libraries(Base
-    PUBLIC glm::glm
+    PUBLIC spdlog::spdlog
+           glm::glm
            SDL2::SDL2
            EGL
            GLESv3)

@@ -5,11 +5,13 @@
 #include "Base/Window.h"
 
 #include <stdexcept>
+#include <spdlog/spdlog.h>
 #include <SDL_syswm.h>
 
 Window::Window(const Descriptor &descriptor) {
     if (SDL_Init(SDL_INIT_VIDEO)) {
-        throw std::runtime_error("Error: Fail to initialize SDL.");
+        spdlog::error("{}", SDL_GetError());
+        throw std::runtime_error("Fail to create Window.");
     }
 
     window_ = SDL_CreateWindow(descriptor.title.c_str(),
@@ -19,7 +21,8 @@ Window::Window(const Descriptor &descriptor) {
                                descriptor.size.y,
                                0);
     if (!window_) {
-        throw std::runtime_error("Error: Fail to create SDL window.");
+        spdlog::error("{}", SDL_GetError());
+        throw std::runtime_error("Fail to create Window.");
     }
 }
 
