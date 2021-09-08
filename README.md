@@ -33,6 +33,17 @@ cmake --build [build directory]
 
 ## 목차
 
-1. 오리엔테이션:
-   [동영상](https://youtu.be/5ltQAmyo6Mo),
-   [슬라이드](https://docs.google.com/presentation/d/18XgdDWOH9SFFyHMuTS2kuhDO379Wo0qtpKugqk8h9jw/edit?usp=sharing)
+### 1. 오리엔테이션
+
++ [동영상](https://youtu.be/5ltQAmyo6Mo)
++ [슬라이드](https://docs.google.com/presentation/d/18XgdDWOH9SFFyHMuTS2kuhDO379Wo0qtpKugqk8h9jw/edit?usp=sharing)
+
+### 2. 컴퓨터 그래픽스
+
++ [동영상](https://youtu.be/aq7UXbus7NY)
++ [슬라이드](https://docs.google.com/presentation/d/1-bCNUH0e6j4QF70cVQGsblL6h6T5sOLJ5by-h3unJxE/edit?usp=sharing)
+
+### 3. 프로젝트 셋업
+
++ [동영상](https://youtu.be/zLjvoZEYcew)
++ [슬라이드](https://docs.google.com/presentation/d/1r0VwI4tPbyFKDmpEj_NDT8QYkK9F9qFtRODPaod7RIg/edit?usp=sharing)
