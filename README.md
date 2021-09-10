@@ -47,3 +47,9 @@ cmake --build [build directory]
 
 + [동영상](https://youtu.be/zLjvoZEYcew)
 + [슬라이드](https://docs.google.com/presentation/d/1r0VwI4tPbyFKDmpEj_NDT8QYkK9F9qFtRODPaod7RIg/edit?usp=sharing)
+
+### 4. EGL 초기화 및 종료
+
++ [동영상](https://youtu.be/mMIePH5AInI)
++ [슬라이드](https://docs.google.com/presentation/d/1_wH_11cCXuj_5nGiB_4HMLoXQYgn2OCe7qx9IcIdHsc/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/04.InitializeAndTerminateEGL)

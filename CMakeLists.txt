@@ -10,3 +10,4 @@ list(APPEND CMAKE_MODULE_PATH
 
 add_subdirectory(Base)
 add_subdirectory(Test)
+add_subdirectory(04.InitializeAndTerminateEGL)
