@@ -4,6 +4,7 @@
 
 add_library(Base
     include/Base/Window.h
+    include/Base/utility.h
     src/Window.cpp)
 
 target_include_directories(Base
