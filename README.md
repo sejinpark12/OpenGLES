@@ -53,3 +53,9 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/mMIePH5AInI)
 + [슬라이드](https://docs.google.com/presentation/d/1_wH_11cCXuj_5nGiB_4HMLoXQYgn2OCe7qx9IcIdHsc/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/04.InitializeAndTerminateEGL)
+
+### 5. EGLConfig 선택
+
++ [동영상](https://youtu.be/mQx_7W0pXqU)
++ [슬라이드](https://docs.google.com/presentation/d/1pww4_xDNyYiSIlCFKY1wakQ9Fl6Zojar0gGaP3OufQE/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/05.ChooseEGLConfig)
