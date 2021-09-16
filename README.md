@@ -33,28 +33,28 @@ cmake --build [build directory]
 
 ## 목차
 
-### 1. 오리엔테이션
+### 01. 오리엔테이션
 
 + [동영상](https://youtu.be/5ltQAmyo6Mo)
 + [슬라이드](https://docs.google.com/presentation/d/18XgdDWOH9SFFyHMuTS2kuhDO379Wo0qtpKugqk8h9jw/edit?usp=sharing)
 
-### 2. 컴퓨터 그래픽스
+### 02. 컴퓨터 그래픽스
 
 + [동영상](https://youtu.be/aq7UXbus7NY)
 + [슬라이드](https://docs.google.com/presentation/d/1-bCNUH0e6j4QF70cVQGsblL6h6T5sOLJ5by-h3unJxE/edit?usp=sharing)
 
-### 3. 프로젝트 셋업
+### 03. 프로젝트 셋업
 
 + [동영상](https://youtu.be/zLjvoZEYcew)
 + [슬라이드](https://docs.google.com/presentation/d/1r0VwI4tPbyFKDmpEj_NDT8QYkK9F9qFtRODPaod7RIg/edit?usp=sharing)
 
-### 4. EGL 초기화 및 종료
+### 04. EGL 초기화 및 종료
 
 + [동영상](https://youtu.be/mMIePH5AInI)
 + [슬라이드](https://docs.google.com/presentation/d/1_wH_11cCXuj_5nGiB_4HMLoXQYgn2OCe7qx9IcIdHsc/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/04.InitializeAndTerminateEGL)
 
-### 5. EGLConfig 선택
+### 05. EGLConfig 선택
 
 + [동영상](https://youtu.be/mQx_7W0pXqU)
 + [슬라이드](https://docs.google.com/presentation/d/1pww4_xDNyYiSIlCFKY1wakQ9Fl6Zojar0gGaP3OufQE/edit?usp=sharing)
