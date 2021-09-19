@@ -59,3 +59,9 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/mQx_7W0pXqU)
 + [슬라이드](https://docs.google.com/presentation/d/1pww4_xDNyYiSIlCFKY1wakQ9Fl6Zojar0gGaP3OufQE/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/05.ChooseEGLConfig)
+
+### 06. EGLContext 생성 및 파괴
+
++ [동영상](https://youtu.be/RIkW-LrTpCA)
++ [슬라이드](https://docs.google.com/presentation/d/1wC8OPmVXykqhSSzcQHYzn0rxMtqjCM2RW36Foa6zI7A/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/06.CreateAndDestroyEGLContext)
