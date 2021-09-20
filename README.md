@@ -65,3 +65,9 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/RIkW-LrTpCA)
 + [슬라이드](https://docs.google.com/presentation/d/1wC8OPmVXykqhSSzcQHYzn0rxMtqjCM2RW36Foa6zI7A/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/06.CreateAndDestroyEGLContext)
+
+### 07. EGLSurface 생성 및 파괴
+
++ [동영상](https://youtu.be/zei42ZknbNQ)
++ [슬라이드](https://docs.google.com/presentation/d/1jsxYPOqg379006023EbhhsIDvloi7D3GABfndRJ61Co/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/07.CreateAndDestroyEGLSurface)
