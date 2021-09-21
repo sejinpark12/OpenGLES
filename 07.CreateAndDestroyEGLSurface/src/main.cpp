@@ -17,7 +17,7 @@ struct App {
 
 int main([[maybe_unused]] int argc, [[maybe_unused]] char *argv[]) {
     App app{};
-    Window window{{.title = "EGLContext 생성 및 파괴", .size = {1280, 720}}};
+    Window window{{.title = "EGLSurface 생성 및 파괴", .size = {1280, 720}}};
 
     window.run([&app, &window] {
                    app.display = eglGetDisplay(EGL_DEFAULT_DISPLAY);
