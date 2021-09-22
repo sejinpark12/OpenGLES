@@ -71,3 +71,9 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/zei42ZknbNQ)
 + [슬라이드](https://docs.google.com/presentation/d/1jsxYPOqg379006023EbhhsIDvloi7D3GABfndRJ61Co/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/07.CreateAndDestroyEGLSurface)
+
+### 08. Current EGL 만들기
+
++ [동영상](https://youtu.be/iXEVOfjE4vo)
++ [슬라이드](https://docs.google.com/presentation/d/1BRRIDxZluug28msn3i7g6o9W2IHD0YarH5PFG184_No/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/08.MakeCurrentEGL)

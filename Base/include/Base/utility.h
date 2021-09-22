@@ -7,6 +7,7 @@
 
 #include <spdlog/spdlog.h>
 #include <EGL/egl.h>
+#include <GLES3/gl3.h>
 
 #define STRING(x) #x
 
@@ -21,8 +22,20 @@
     } \
 } while(false)
 #else
-#define EGL_TEST(function) \
-    function
+#define EGL_TEST(function) function
+#endif
+
+#ifndef NDEBUG
+#define GL_TEST(function) do { \
+    function; \
+    GLenum error = glGetError(); \
+    if (error != GL_NO_ERROR) { \
+        spdlog::error("{} with 0x{:x}.", STRING(function), error); \
+        throw std::runtime_error("Err to call GL function."); \
+    } \
+} while(false)
+#else
+#define GL_TEST(function) function
 #endif
 
 #endif //UTILITY_H
