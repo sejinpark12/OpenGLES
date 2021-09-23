@@ -19,7 +19,7 @@ Window::Window(const Descriptor &descriptor) {
                                SDL_WINDOWPOS_CENTERED,
                                descriptor.size.x,
                                descriptor.size.y,
-                               0);
+                               SDL_WINDOW_ALLOW_HIGHDPI);
     if (!window_) {
         spdlog::error("{}", SDL_GetError());
         throw std::runtime_error("Fail to create Window.");
@@ -64,7 +64,7 @@ void Window::title(const std::string &title) {
 
 glm::ivec2 Window::size() const {
     glm::ivec2 size;
-    SDL_GetWindowSize(window_, &size.x, &size.y);
+    SDL_GL_GetDrawableSize(window_, &size.x, &size.y);
     return size;
 }
 
