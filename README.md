@@ -77,3 +77,8 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/iXEVOfjE4vo)
 + [슬라이드](https://docs.google.com/presentation/d/1BRRIDxZluug28msn3i7g6o9W2IHD0YarH5PFG184_No/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/08.MakeCurrentEGL)
+
+### 09. 그래픽스 파이프라인
+
++ [동영상](https://youtu.be/phzqJImcPDM)
++ [슬라이드](https://docs.google.com/presentation/d/17291LzoFqTE9boKv9XV47zFM5ZjTnGYdm2YzetbMqVY/edit?usp=sharing)
