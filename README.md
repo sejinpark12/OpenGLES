@@ -82,3 +82,9 @@ cmake --build [build directory]
 
 + [동영상](https://youtu.be/phzqJImcPDM)
 + [슬라이드](https://docs.google.com/presentation/d/17291LzoFqTE9boKv9XV47zFM5ZjTnGYdm2YzetbMqVY/edit?usp=sharing)
+
+### 10. Shader 생성 및 파괴
+
++ [동영상](https://youtu.be/oz4dCYZSwjA)
++ [슬라이드](https://docs.google.com/presentation/d/1U29vG6KALEmhtN71JCHLcLDLUORcxYY_eEfbid_Q2Sk/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/10.CreateAndDestroyShader)

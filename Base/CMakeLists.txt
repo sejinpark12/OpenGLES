@@ -5,13 +5,17 @@
 add_library(Base
     include/Base/Window.h
     include/Base/utility.h
-    src/Window.cpp)
+    src/Window.cpp
+    src/utility.cpp)
 
 target_include_directories(Base
     PUBLIC include)
 
 target_compile_features(Base
     PUBLIC cxx_std_17)
+
+target_compile_definitions(Base
+    PUBLIC HOME_PATH="${CMAKE_HOME_DIRECTORY}")
 
 find_package(spdlog CONFIG REQUIRED)
 find_package(glm CONFIG REQUIRED)
