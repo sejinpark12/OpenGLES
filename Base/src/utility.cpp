@@ -83,3 +83,42 @@ std::filesystem::path home() {
 GLuint create_shader(const std::filesystem::path &path) {
     return create_shader(shader_type(path), read_file(path));
 }
+
+GLuint create_graphics_pipeline(const std::array<std::filesystem::path, 2> &paths) {
+    GLuint program = glCreateProgram();
+    if (!program) {
+        spdlog::error("Fail to create a program.");
+        throw std::runtime_error("Fail to create a program.");
+    }
+
+    const GLuint shaders[] = {
+            create_shader(paths[0]),
+            create_shader(paths[1])
+    };
+
+    GL_TEST(glAttachShader(program, shaders[0]));
+    GL_TEST(glAttachShader(program, shaders[1]));
+    GL_TEST(glLinkProgram(program));
+
+    GLint status;
+    GL_TEST(glGetProgramiv(program, GL_LINK_STATUS, &status));
+
+    if (!status) {
+        GLint length;
+        GL_TEST(glGetProgramiv(program, GL_INFO_LOG_LENGTH, &length));
+
+        if (length) {
+            std::string log(length, '\n');
+            GL_TEST(glGetProgramInfoLog(program, length, nullptr, log.data()));
+            spdlog::error("Err to link a program.\n{}.", log);
+        }
+
+        GL_TEST(glDeleteProgram(program));
+        throw std::runtime_error("Fail to create a program.");
+    }
+
+    GL_TEST(glDeleteShader(shaders[0]));
+    GL_TEST(glDeleteShader(shaders[1]));
+
+    return program;
+}

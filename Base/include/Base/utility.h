@@ -108,4 +108,9 @@ std::filesystem::path home();
 /// \return 생성된 셰이더를 반환합니다.
 GLuint create_shader(const std::filesystem::path &path);
 
+/// 프로그램을 생성합니다.
+/// \param paths 버텍스, 프레그먼트 셰이더 소스 파일의 경로입니다.
+/// \return 생성된 프로그램을 반환합니다.
+GLuint create_graphics_pipeline(const std::array<std::filesystem::path, 2> &paths);
+
 #endif //UTILITY_H
