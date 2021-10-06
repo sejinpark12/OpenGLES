@@ -32,7 +32,7 @@ int main([[maybe_unused]] int argc, [[maybe_unused]] char *argv[]) {
                    GL_TEST(glClearColor(0.2f, 0.2f, 0.2f, 1.0f));
                    GL_TEST(glClear(GL_COLOR_BUFFER_BIT));
 
-                   GL_TEST(glViewport(0, 0, window.size().x, window.size().y));
+                   GL_TEST(glViewport(0, 0, window.size().x * window.dpi(), window.size().y * window.dpi()));
 
                    GL_TEST(glUseProgram(app.program));
                    GL_TEST(glDrawArrays(GL_TRIANGLES, 0, 3));

@@ -64,7 +64,7 @@ void Window::title(const std::string &title) {
 
 glm::ivec2 Window::size() const {
     glm::ivec2 size;
-    SDL_GL_GetDrawableSize(window_, &size.x, &size.y);
+    SDL_GetWindowSize(window_, &size.x, &size.y);
     return size;
 }
 
