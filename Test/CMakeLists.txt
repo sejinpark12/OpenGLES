@@ -3,6 +3,7 @@
 #
 
 add_executable(Test
+    src/utility_test.cpp
     src/window_test.cpp)
 
 target_include_directories(Test

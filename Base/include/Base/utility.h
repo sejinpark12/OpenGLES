@@ -42,6 +42,15 @@
 #define GL_TEST(function) function
 #endif
 
+/// 컨테이너의 바이트 크기를 반환합니다.
+/// \tparam Container 컨테이너 타입입니다.
+/// \param container 컨테이너 객체입니다.
+/// \return 컨테이너의 바이트 크기입니다.
+template<typename Container>
+inline int64_t byte_size(const Container& container) {
+    return sizeof(typename Container::value_type) * container.size();
+}
+
 /// OpenGL ES를 위한 EGL 초기화 및 객체 생성을 합니다.
 /// \tparam App EGL 객체를 저장할 수 있는 타입입니다.
 /// \param app App 객체입니다.
