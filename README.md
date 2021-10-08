@@ -1,5 +1,7 @@
 # OpenGL ES
 
+![Platform](https://img.shields.io/badge/Platform-macOS-brightgreen)
+
 OpenGL ES를 이용해서 3D 모델을 렌더링 하는 방법, 물체를 바라보는 시점을 동적으로 변환하는 방법, 쉐이딩이나 조명, 텍스처 효과를 사용하는 방법 등과 같은 기본적인 컴퓨터 그래픽스 관련 테크닉을
 설명합니다.
 
