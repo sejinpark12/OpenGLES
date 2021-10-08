@@ -96,3 +96,9 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/mhncEqMN4lk)
 + [슬라이드](https://docs.google.com/presentation/d/17IC4-6O_wIXW2reGQbF0S1fBIwvWR9_VoJCoRlcZW7w/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/11.CreateAndDestroyProgram)
+
+### 13. Buffer 배우기
+
++ [동영상](https://youtu.be/MewWN0lpEXs)
++ [슬라이드](https://docs.google.com/presentation/d/1l-fUm7zxqnaawEQf-pOkcJAhi18UeFQxVrcDfzxuLiE/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/13.LearnBuffer)
