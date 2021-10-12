@@ -97,6 +97,11 @@ cmake --build [build directory]
 + [슬라이드](https://docs.google.com/presentation/d/17IC4-6O_wIXW2reGQbF0S1fBIwvWR9_VoJCoRlcZW7w/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/11.CreateAndDestroyProgram)
 
+### 12. 스테이트 머신
+
++ [동영상](https://youtu.be/natFFEMq0YY)
++ [슬라이드](https://docs.google.com/presentation/d/1XYsW_vaOUFOygMmxf1DIpS7ZTx097UeC7tk9uXf2CWs/edit?usp=sharing)
+
 ### 13. Buffer 배우기
 
 + [동영상](https://youtu.be/MewWN0lpEXs)
