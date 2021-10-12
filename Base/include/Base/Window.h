@@ -6,6 +6,7 @@
 #define WINDOW_H
 
 #include <string>
+#include <functional>
 #include <glm/glm.hpp>
 #include <SDL.h>
 

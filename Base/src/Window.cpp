@@ -50,7 +50,9 @@ void Window::run(const std::function<void()> &startup, const std::function<void(
 }
 
 void Window::stop() {
-    SDL_Event event{.window{.windowID = SDL_GetWindowID(window_), .event=SDL_WINDOWEVENT_CLOSE}};
+    SDL_Event event{};
+    event.window.windowID = SDL_GetWindowID(window_);
+    event.window.event = SDL_WINDOWEVENT_CLOSE;
     SDL_PushEvent(&event);
 }
 

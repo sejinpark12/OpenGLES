@@ -37,4 +37,10 @@ if(${CMAKE_SYSTEM_NAME} MATCHES Darwin)
     target_compile_options(Base
         PRIVATE -fobjc-arc
                 -x objective-c++)
+elseif(${CMAKE_SYSTEM_NAME} MATCHES Windows)
+    target_sources(Base
+        PRIVATE src/windows/Window.cpp)
+
+    target_compile_definitions(Base
+        PUBLIC SDL_MAIN_HANDLED)
 endif()
