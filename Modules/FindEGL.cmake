@@ -6,12 +6,13 @@ if(TARGET EGL)
     return()
 endif()
 
-add_library(EGL SHARED IMPORTED)
+add_library(EGL UNKNOWN IMPORTED)
 
 find_path(EGL_INCLUDE_DIR EGL/EGL.h
     PATHS ${PROJECT_SOURCE_DIR}/SDK/include)
 
-find_library(EGL_LIBRARY EGL
+find_library(EGL_LIBRARY
+    NAMES EGL libEGL
     PATHS ${PROJECT_SOURCE_DIR}/SDK/lib/${CMAKE_SYSTEM_NAME})
 
 set_target_properties(EGL PROPERTIES

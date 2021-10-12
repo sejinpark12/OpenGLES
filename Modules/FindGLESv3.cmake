@@ -6,12 +6,13 @@ if(TARGET GLESv3)
     return()
 endif()
 
-add_library(GLESv3 SHARED IMPORTED)
+add_library(GLESv3 UNKNOWN IMPORTED)
 
 find_path(GL3_INCLUDE_DIR GLES3/gl3.h
     PATHS ${PROJECT_SOURCE_DIR}/SDK/include)
 
-find_library(GLESv2_LIBRARY GLESv2
+find_library(GLESv2_LIBRARY
+    NAMES GLESv2 libGLESv2
     PATHS ${PROJECT_SOURCE_DIR}/SDK/lib/${CMAKE_SYSTEM_NAME})
 
 set_target_properties(GLESv3 PROPERTIES
