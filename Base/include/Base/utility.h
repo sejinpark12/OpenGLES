@@ -42,6 +42,8 @@
 #define GL_TEST(function) function
 #endif
 
+#define GL_OFFSETOF(type, field) reinterpret_cast<void*>(offsetof(type, field))
+
 /// 컨테이너의 바이트 크기를 반환합니다.
 /// \tparam Container 컨테이너 타입입니다.
 /// \param container 컨테이너 객체입니다.

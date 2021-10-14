@@ -107,3 +107,9 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/MewWN0lpEXs)
 + [슬라이드](https://docs.google.com/presentation/d/1l-fUm7zxqnaawEQf-pOkcJAhi18UeFQxVrcDfzxuLiE/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/13.LearnBuffer)
+
+### 14. Attribute 설정
+
++ [동영상](https://youtu.be/9xBHtUP3xN0)
++ [슬라이드](https://docs.google.com/presentation/d/1lPrFZYUg-MMU8fiAs7OZ3YO2bz7fUHak3h38Ct6NAeA/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/14.SetAttribute)
