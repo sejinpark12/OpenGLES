@@ -113,3 +113,9 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/9xBHtUP3xN0)
 + [슬라이드](https://docs.google.com/presentation/d/1lPrFZYUg-MMU8fiAs7OZ3YO2bz7fUHak3h38Ct6NAeA/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/14.SetAttribute)
+
+### 15. Element 배우기
+
++ [동영상](https://youtu.be/qGKvG_Rj_oE)
++ [슬라이드](https://docs.google.com/presentation/d/1ApbFRZsN8oX-G8rO0nhP3eeljXV88QBHTiyVXs0Ft1w/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/15.LearnElement)
