@@ -119,3 +119,9 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/qGKvG_Rj_oE)
 + [슬라이드](https://docs.google.com/presentation/d/1ApbFRZsN8oX-G8rO0nhP3eeljXV88QBHTiyVXs0Ft1w/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/15.LearnElement)
+
+### 16. Vertex Array 배우기
+
++ [동영상](https://youtu.be/woBMb3_KsPs)
++ [슬라이드](https://docs.google.com/presentation/d/1faK6tmz2Pt62HwA7mDwsa-I-_DvdRYVoJA5P8MDl18E/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/16.LearnVertexArray)
