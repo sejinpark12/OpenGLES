@@ -125,3 +125,9 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/woBMb3_KsPs)
 + [슬라이드](https://docs.google.com/presentation/d/1faK6tmz2Pt62HwA7mDwsa-I-_DvdRYVoJA5P8MDl18E/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/16.LearnVertexArray)
+
+### 17. Texture 배우기
+
++ [동영상](https://youtu.be/cqFGJ00UptI)
++ [슬라이드](https://docs.google.com/presentation/d/1MpsVuryMBG7CglXZJwAgAaiQwAwGMejl28V-tN67rkM/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/17.LearnTexture)
