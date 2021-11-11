@@ -56,7 +56,7 @@ int main([[maybe_unused]] int argc, [[maybe_unused]] char *argv[]) {
                    GL_TEST(glBindBuffer(GL_ARRAY_BUFFER, 0));
 
                    GL_TEST(glGenVertexArrays(1, &app.vertex_array));
-                   GL_TEST(glBindVertexArray(app.vertex_buffer));
+                   GL_TEST(glBindVertexArray(app.vertex_array));
                    GL_TEST(glBindBuffer(GL_ARRAY_BUFFER, app.vertex_buffer));
                    GL_TEST(glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, app.index_buffer));
                    GL_TEST(glEnableVertexAttribArray(0));
