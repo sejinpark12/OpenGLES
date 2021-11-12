@@ -131,3 +131,9 @@ cmake --build [build directory]
 + [동영상](https://youtu.be/cqFGJ00UptI)
 + [슬라이드](https://docs.google.com/presentation/d/1MpsVuryMBG7CglXZJwAgAaiQwAwGMejl28V-tN67rkM/edit?usp=sharing)
 + [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/17.LearnTexture)
+
+### 18. 좌표계
+
++ [동영상](https://youtu.be/utQSw-JyVIM)
++ [슬라이드](https://docs.google.com/presentation/d/1v8XIAp8Nkyr_RteSg2g97cvN1_DcKZ4JqQWGgYVXrjU/edit?usp=sharing)
++ [코드](https://github.com/GraphicsKorea/OpenGLES/tree/main/18.CoordinateSystem)
