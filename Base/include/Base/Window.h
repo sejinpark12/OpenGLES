@@ -10,6 +10,8 @@
 #include <glm/glm.hpp>
 #include <SDL.h>
 
+#include "Camera.h"
+
 /// 윈도우 클래스.
 class Window {
 public:
@@ -69,6 +71,10 @@ public:
     /// \return 현재 윈도우의 DPI입니다.
     [[nodiscard]] float dpi() const;
 
+    /// 카메라를 반환합니다.
+    /// \return camera_ 맴버변수입니다.
+    [[nodiscard]] Camera &get_camera();
+
 private:
     /// 이벤트를 처리합니다.
     /// \return 이벤트 루프를 유지하는 경우는 참, 종료하는 경우는 거짓을 반환합니다.
@@ -81,6 +87,7 @@ private:
 
 private:
     SDL_Window *window_{nullptr};
+    Camera camera_;
 };
 
 #endif //WINDOW_H

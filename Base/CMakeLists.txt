@@ -5,8 +5,10 @@
 add_library(Base
     include/Base/Window.h
     include/Base/utility.h
+    include/Base/Camera.h
     src/Window.cpp
-    src/utility.cpp)
+    src/utility.cpp
+    src/Camera.cpp)
 
 target_include_directories(Base
     PUBLIC include)

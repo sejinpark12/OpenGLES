@@ -41,6 +41,7 @@ void Window::run(const std::function<void()> &startup, const std::function<void(
     SDL_ShowWindow(window_);
 
     while (process_event()) {
+        camera_.updateCameraVectors();
         update();
         render();
     }
@@ -86,4 +87,8 @@ bool Window::process_event() const {
 
 bool Window::should_close_window(const SDL_Event &event) const {
     return event.window.windowID == SDL_GetWindowID(window_) && event.window.event == SDL_WINDOWEVENT_CLOSE;
+}
+
+Camera &Window::get_camera() {
+    return camera_;
 }
