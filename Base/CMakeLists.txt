@@ -6,9 +6,11 @@ add_library(Base
     include/Base/Window.h
     include/Base/utility.h
     include/Base/Camera.h
+    include/Base/Input.h
     src/Window.cpp
     src/utility.cpp
-    src/Camera.cpp)
+    src/Camera.cpp
+    src/Input.cpp)
 
 target_include_directories(Base
     PUBLIC include)

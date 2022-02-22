@@ -11,6 +11,7 @@
 #include <SDL.h>
 
 #include "Camera.h"
+#include "Input.h"
 
 /// 윈도우 클래스.
 class Window {
@@ -88,6 +89,7 @@ private:
 private:
     SDL_Window *window_{nullptr};
     Camera camera_;
+    Input input_;
 };
 
 #endif //WINDOW_H
